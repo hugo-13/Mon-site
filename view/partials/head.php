@@ -1,4 +1,4 @@
-<header>
+<head>
 
     <base href="/view/">
 
@@ -17,4 +17,4 @@
     <!-- icon dans l'onglet  -->
     <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.png">
     
-</header>
+</head>

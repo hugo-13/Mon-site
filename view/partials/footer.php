@@ -17,7 +17,7 @@
                                 <h5>Pages </h5>
                                 <ul class="list-unstyled">
                                     <li><a href="../#header">Accueil</a></li>
-                                    <li><a href="../#presentation">Qui-suis je ?</a></li>
+                                    <li><a href="../#presentation">Qui suis-je ?</a></li>
                                     <li><a href="../#parcours">Mon parcours</a></li>
                                     <li><a href="../#xp">Mes compétences</a></li>
                                     <li><a href="../#contact">Me contacter</a></li>

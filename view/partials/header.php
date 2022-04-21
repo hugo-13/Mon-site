@@ -10,7 +10,7 @@
                             <a class="nav-link line-anim" aria-current="page" href="../#header">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../#presentation">Qui-suis je ?</a>
+                            <a class="nav-link" href="../#presentation">Qui suis-je ?</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../#parcours">Mon parcours</a>

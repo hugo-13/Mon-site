@@ -171,7 +171,7 @@ $contact->contact();
             <div id="presentation">
                 <div class="title">
                     <h1 class="show-on-scroll">Presentation</h1>
-                    <h2 class="show-on-scroll">Qui-suis je ?</h2>
+                    <h2 class="show-on-scroll">Qui suis-je ?</h2>
                     <hr class="show-on-scroll">
                 </div>
 
@@ -186,7 +186,7 @@ $contact->contact();
                             <br>
                             <br>
                             Aujourd'hui, j'ai choisi d'orienter mes études dans l'informatique plus précisément dans la <strong>programmation</strong>.
-                            Le métier développeur regroupe plusieurs domaines (web, logiciel,...).
+                            Le métier de développeur regroupe plusieurs domaines (web, logiciel,...).
                             J'entreprends actuellement des études orientées web ce qui me permet de découvrir une des facettes de ce métier.
                             Ce métier demande <strong><span>rigueur</span></strong>, <strong><span>persévérance</span></strong>, <strong><span>curiosité</span></strong> et <strong><span>logique</span></strong>.
 
@@ -200,7 +200,7 @@ $contact->contact();
                 <div class="head-content-top"></div>
                 <div class="title">
                     <h1 class="show-on-scroll">Mon parcours</h1>
-                    <h2 class="show-on-scroll">Qu'ai-je fais ?</h2>
+                    <h2 class="show-on-scroll">Qu'ai-je fait ?</h2>
                     <hr class="show-on-scroll">
                 </div>
 
@@ -240,7 +240,7 @@ $contact->contact();
                                 <div class="col-sm-6 right-content text-opacity show-on-scroll">
                                     <h3><strong>Un bon début</strong></h3>
                                     <p>En arrivant au lycée en filière <span><strong>STI2D</strong></span> avec option <span><strong>SIN</strong></span> (Science de l'informatique et du numérique) je découvre plusieurs langages de programmation comme le C, C++, Python, HTML/CSS, PHP et JS.</p>
-                                    <p>Ayant acquit une certaine connaissance en <strong>python</strong> et le <strong>développement web</strong> en général, je décide de m'investir en dehors de mes heures de cours afin d'approfondir mes connaissances.</p>
+                                    <p>Ayant acquis une certaine connaissance en <strong>python</strong> et le <strong>développement web</strong> en général, je décide de m'investir en dehors de mes heures de cours afin d'approfondir mes connaissances.</p>
                                     <p>Pour valider mon année, j'ai eu l'occasion d'effectuer un <strong>stage</strong> et un projet à savoir : créer un logiciel permettant de récupérer les données d'un robot <strong>EDEV3</strong> et de le contrôler, tout cela en python et micro-python.</p>
                                 </div>
                             </div>
@@ -252,8 +252,8 @@ $contact->contact();
                                 <div class="col-sm-6 right-content text-opacity show-on-scroll">
                                     <h3><strong>Mes études supérieures</strong></h3>
                                     <p>Après avoir connu une déception au sein d'un <strong>BTS SIO</strong>, je me dirige vers une formation professionnalisante en développement web, web mobile chez <span><strong>M2i</strong></span> formation à Lyon.</p>
-                                    <p>Cette formation m'a permis d'en <strong>apprendre</strong> d'avantage sur ce métier de developpeur web et d'accroître mes compétences dans le domaine. Ainsi, j'ai de <strong>solides</strong> bases en HTML/CSS, PHP, SQL, JS, et dans plusieurs CMS et frameworks.</p>
-                                    <p>Aujourd'hui, je suis à la recherche d'un <span><strong>stage</strong></span> en entreprise de Juillet à Septembre, afin de gagner en expérience et en compétence. Je suis aussi à la recherche d'une <span><strong>alternance</strong></span> sur 1 an afin de poursuivre mes études la <strong>rentrée prochaine</strong> en licence informatique.
+                                    <p>Cette formation m'a permis d'en <strong>apprendre</strong> davantage sur ce métier de developpeur web et d'accroître mes compétences dans le domaine. Ainsi, j'ai de <strong>solides</strong> bases en HTML/CSS, PHP, SQL, JS, et dans plusieurs CMS et frameworks.</p>
+                                    <p>Aujourd'hui, je suis à la recherche d'un <span><strong>stage</strong></span> en entreprise de Juillet à Septembre, afin de gagner en expérience et en compétences. Je suis aussi à la recherche d'une <span><strong>alternance</strong></span> sur 1 an afin de poursuivre mes études la <strong>rentrée prochaine</strong> en licence informatique.
                                         Je souhaite que cette <strong>passion</strong> devienne mon métier.</p>
                                 </div>
                             </div>
@@ -286,7 +286,7 @@ $contact->contact();
                             <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
                         </div>
                         <div class="progress show-on-scroll">
-                            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">PHP & MYSQL</div>
+                            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">PHP & SQL</div>
                         </div>
                         <div class="progress show-on-scroll" style=" margin-bottom:4vw">
                             <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">JAVASCRIPT</div>
@@ -326,7 +326,7 @@ $contact->contact();
                         <img src="../images/logo.png" />
                     </div>
                     <form method="post" action="../#contact" enctype="multipart/form-data">
-                        <h3>Envoie par mail</h3>
+                        <h3>Envoi par mail</h3>
                         <div class="row">
                             <!-- Message d'erreur  -->
                             <?php echo "<div style='color:red;font-weight:600;margin-top:10px;'>" . $contact->getErreurEnvoie() . "</div>" ?>
