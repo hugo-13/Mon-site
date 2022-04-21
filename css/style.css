@@ -868,6 +868,16 @@ h1 {
     font-weight: 600;
 }
 
+.img-back a {
+    color: #0091ea;
+    text-decoration: none;
+}
+
+.img-back a:hover {
+    color: rgb(102, 171, 250);
+    text-decoration: none;
+}
+
 /* img de transition  */
 @media screen and (max-width:700px) {
     .img-back h5 {
