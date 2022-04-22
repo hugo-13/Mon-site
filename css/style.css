@@ -191,7 +191,7 @@ body {
     color: white;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 3vw;
 }
 
 
@@ -199,23 +199,24 @@ body {
     animation: zoom-in-zoom-out 2s ease infinite;
 }
 
+
 @keyframes zoom-in-zoom-out {
     0% {
-        font-size: 40px;
+        font-size: 3vw;
     }
 
     50% {
-        font-size: 50px;
+        font-size: 5vw;
     }
 
     100% {
-        font-size: 40px;
+        font-size: 3vw;
     }
 }
 
 
 @media screen and (max-width : 800px) {
-    @keyframes zoom-in-zoom-out {
+    /* @keyframes zoom-in-zoom-out {
         0% {
             font-size: 30px;
         }
@@ -227,22 +228,22 @@ body {
         100% {
             font-size: 30px;
         }
-    }
+    } */
 
-    #slider .slide h2 {
+    /* #slider .slide h2 {
         color: white;
         font-weight: 700;
         text-transform: uppercase;
         font-size: 30px;
-    }
+    } */
 }
 
 @media screen and (max-width : 600px){
     
-#slider .slide h2 {
+/* #slider .slide h2 {
 
     font-size: 25px;
-}
+} */
 h1 {
     font-size: 25px !important;
 }
