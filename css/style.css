@@ -259,6 +259,18 @@ h1 {
 }
 
 
+@media screen and (max-height : 650px){
+    #slider .slide h2 {
+        display: none;
+    }
+}
+
+@media screen and (max-height : 380px){
+    .arrow {
+        display: none;
+    }
+}
+
 
 #slider .slide .change-word span:before {
     content: 'Motivation';
@@ -848,9 +860,11 @@ h1 {
 }
 
 
+
+/* interlude  */
 .img-back {
-    margin-top: 130px;
-    background-image: url(../images/slider_3.png);
+    margin-top: 13%;
+    background-image: url(../images/slider_1.png);
     height: 400px;
     width: 100%;
     background-position: center;
@@ -871,6 +885,7 @@ h1 {
 .img-back a {
     color: #0091ea;
     text-decoration: none;
+    border-bottom: none;
 }
 
 .img-back a:hover {
@@ -885,6 +900,7 @@ h1 {
         font-weight: 600;
     }
 }
+
 
 
 
