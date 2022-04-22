@@ -94,8 +94,8 @@ $contact->contact();
                     </div>
                     <div class="slide">
                         <img src="../images/slider_3.png" alt="">
-                        <div class="text-slider zoom-font">
-                            <h2 class="zoom">Plus qu'une passion</h2>
+                        <div class="text-slider clink">
+                            <h2>Plus qu'une passion <span></span></h2>
                         </div>
                 </figure>
             </div>
