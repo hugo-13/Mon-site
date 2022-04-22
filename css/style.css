@@ -191,108 +191,81 @@ body {
     color: white;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 3vw;
-}
-
-
-#slider .slide .zoom {
-    animation: zoom-in-zoom-out 2s ease infinite;
-}
-
-
-@keyframes zoom-in-zoom-out {
-    0% {
-        font-size: 3vw;
-    }
-
-    50% {
-        font-size: 5vw;
-    }
-
-    100% {
-        font-size: 3vw;
-    }
+    font-size: 40px;
 }
 
 
 @media screen and (max-width : 800px) {
-    /* @keyframes zoom-in-zoom-out {
-        0% {
-            font-size: 30px;
-        }
 
-        50% {
-            font-size: 40px;
-        }
-
-        100% {
-            font-size: 30px;
-        }
-    } */
-
-    /* #slider .slide h2 {
+    #slider .slide h2 {
         color: white;
         font-weight: 700;
         text-transform: uppercase;
         font-size: 30px;
-    } */
-}
-
-@media screen and (max-width : 600px){
-    
-/* #slider .slide h2 {
-
-    font-size: 25px;
-} */
-h1 {
-    font-size: 25px !important;
-}
-
-.all-prog h5 {
-    font-size: 17px;
-}
-.head-content-top {
-    opacity: 0;
-}
-#parcours {
-    padding-top: 20px;
-}
+    }
 }
 
 
-@media screen and (max-height : 650px){
+@media screen and (max-width : 600px) {
+
+    #slider .slide h2 {
+
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 25px !important;
+    }
+
+    .all-prog h5 {
+        font-size: 17px;
+    }
+
+    .head-content-top {
+        opacity: 0;
+    }
+
+    #parcours {
+        padding-top: 20px;
+    }
+}
+
+
+@media screen and (max-height : 650px) {
     #slider .slide h2 {
         margin-top: 15px;
     }
 }
-@media screen and (max-height : 625px){
+
+@media screen and (max-height : 625px) {
     #slider .slide h2 {
         margin-top: 30px;
     }
 }
-@media screen and (max-height : 575px){
+
+@media screen and (max-height : 575px) {
     #slider .slide h2 {
         margin-top: 60px;
     }
 }
-@media screen and (max-height : 525px){
+
+@media screen and (max-height : 525px) {
     #slider .slide h2 {
         margin-top: 80px;
     }
 }
-@media screen and (max-height : 480px){
+
+@media screen and (max-height : 480px) {
     #slider .slide h2 {
         margin-top: 120px;
     }
-}
-@media screen and (max-height : 400px){
-    #slider .slide h2 {
+    .arrow {
         display: none;
     }
 }
 
-@media screen and (max-height : 450px){
-    .arrow {
+@media screen and (max-height : 400px) {
+    #slider .slide h2 {
         display: none;
     }
 }
@@ -301,7 +274,7 @@ h1 {
 #slider .slide .change-word span:before {
     content: 'Motivation';
     animation-name: head;
-    animation-duration: 10s;
+    animation-duration: 7.5s;
     animation-iteration-count: infinite;
 }
 
@@ -318,6 +291,29 @@ h1 {
         content: "Ambition"
     }
 }
+
+#slider .slide .clink span:before {
+    content: '';
+    animation-name: clink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes clink {
+
+    0%,
+    25% {
+        opacity: 1;
+        content: '';
+    }
+
+    26%,
+    100% {
+        opacity: 1;
+        content: "!"
+    }
+}
+
 
 
 /* header  */
@@ -409,11 +405,12 @@ h1 {
         margin: 0;
         margin-top: 10px;
     }
-    
+
     .information .linkedin {
         margin: 0;
         margin-top: 15px;
     }
+
     .information .git {
         margin: 0;
     }
@@ -1341,9 +1338,11 @@ h1 {
     .contact-form .btnContact {
         width: 200px;
     }
+
     .alert-logo {
         display: none;
     }
+
     #notif_contact strong {
         font-size: 80%;
         padding-right: 10px;
