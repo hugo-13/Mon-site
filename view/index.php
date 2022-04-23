@@ -333,14 +333,18 @@ $contact->contact();
                             <div class="col-md-6 show-on-scroll">
 
                                 <div class="form-group">
-                                    <input type="text" name="nom" class="form-control" placeholder="Nom, entreprise, ..." />
+                                    <input type="text" name="nom" class="form-control" placeholder="Nom, entreprise, ..." value="<?php if (isset($_POST['nom'])) {
+                                                                                                                                        echo $_POST['nom'];
+                                                                                                                                    } ?>" />
                                 </div>
 
                                 <!-- Message d'erreur  -->
                                 <?php echo "<div style='color:red;font-weight:600;margin-top:10px;'>" . $contact->getErreurNom() . "</div>" ?>
 
                                 <div class="form-group">
-                                    <input type="text" name="email" class="form-control" placeholder="Email" />
+                                    <input type="text" name="email" class="form-control" placeholder="Email" value="<?php if (isset($_POST['email'])) {
+                                                                                                                        echo $_POST['email'];
+                                                                                                                    } ?>" />
                                 </div>
 
                                 <!-- Message d'erreur  -->
@@ -349,9 +353,13 @@ $contact->contact();
 
 
                                 <select class="form-select" aria-label="Default select example" name="pour">
-                                    <option selected value="0">Objet</option>
-                                    <option value="Stage">Un stage</option>
-                                    <option value="Alternance">Une alternance</option>
+                                    <?php if (isset($_POST['pour'])) {
+                                    ?> <option selected value="<?php echo $_POST['pour'] ?>"><?php echo $_POST['pour'] ?></option>
+                                    <?php   } else { ?>
+                                        <option selected value="0">Objet</option>
+                                    <?php  } ?>
+                                    <option value="Un stage">Un stage</option>
+                                    <option value="Une alternance">Une alternance</option>
                                     <option value="Autre">Autre</option>
                                 </select>
 
@@ -361,7 +369,9 @@ $contact->contact();
                             </div>
                             <div class="col-md-6 show-on-scroll">
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" placeholder="Votre message" style="width: 100%; height: 150px;"></textarea>
+                                    <textarea name="message" class="form-control" placeholder="Votre message" style="width: 100%; height: 150px;"> <?php if (isset($_POST['message'])) {
+                                                                                                                                                        echo $_POST['message'];
+                                                                                                                                                    } ?></textarea>
                                 </div>
                                 <!-- Message d'erreur  -->
                                 <?php echo "<div style='color:red;font-weight:600;margin-top:10px;'>" . $contact->getErreurMessage() . "</div>" ?>

@@ -5,17 +5,8 @@
 
 body {
     background: rgb(255, 255, 255);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -135,6 +126,8 @@ body {
         left: 0%;
     }
 }
+
+
 
 #slider .arrow {
     position: absolute;
