@@ -14,10 +14,9 @@ body {
 #slider .chart {
     background: #a8a8a862;
     justify-content: flex-start;
-    border-radius: 100px;
     align-items: center;
     position: relative;
-    padding: 0 5px;
+    padding: 0 0px;
     display: flex;
     height: 5px;
     width: 100%;
@@ -50,7 +49,7 @@ body {
 
     100% {
         /* You need to change the percentage below to match the value in the corresponding <span> */
-        width: 101%;
+        width: 100%;
     }
 }
 
@@ -67,27 +66,23 @@ body {
 /* slider  */
 /* slider  */
 #slider .slider figure div {
-    float: left;
-    width: 20%;
+    /* float: left; */
+    /* width: 20%; */
     margin-top: -27px;
 }
 
-#slider .slider figure div img {
-    width: 100%;
+ #slider .slider figure div img {
+    /* position: relative; */
+    width: 100% !important;
     height: calc(100vh + 27px);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     float: left;
     object-fit: cover;
-    object-position: center;
-}
-
-#slider .slider figure {
-    position: relative;
-    width: 500%;
+    object-position: center; 
     margin: 0;
-    animation: animate 30s infinite;
+    /* animation: animate 30s infinite; */
     z-index: 100;
     position: absolute;
 }
@@ -97,38 +92,22 @@ body {
     z-index: 1;
 }
 
-@keyframes animate {
-    0% {
-        left: 0;
-    }
-
-    30% {
-        left: 0;
-    }
-
-    32% {
-        left: -100%;
-    }
-
-    64% {
-        left: -100%;
-    }
-
-    66% {
-        left: -200%;
-    }
-
-    98% {
-        left: -200%;
-    }
-
-    100% {
-        left: 0%;
-    }
+#slider .slide {
+    background-color: #000;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 
 
+
+@keyframes fade {
+    from {opacity: .9} 
+    to {opacity: 1}
+  }
+
+
+/* flech presentation  */
 #slider .arrow {
     position: absolute;
     z-index: 998;
@@ -174,10 +153,12 @@ body {
 #slider .slide .text-slider {
     position: absolute;
     z-index: 999999;
-    display: flex;
     display: block;
-    top: 50vh;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    display: grid;
+    grid-template-columns: 100vw;
 }
 
 #slider .slide h2 {
@@ -185,6 +166,19 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 40px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+@media screen and (max-width : 800px) {
+
+    #slider .slide h2 {
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 26px;
+    }
 }
 
 
@@ -203,7 +197,7 @@ body {
 
     #slider .slide h2 {
 
-        font-size: 25px;
+        font-size: 23px;
     }
 
     h1 {
@@ -378,6 +372,18 @@ body {
 /* Media screen partie info  */
 @media screen and (max-width:1300px) {
 
+    .information {
+        padding-top: 25px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        vertical-align: middle;
+        margin-right: 20px;
+        margin-left: 20px;
+        position: relative;
+        z-index: 999;
+    }
+
 
     .information .icon {
         display: flex;
@@ -430,7 +436,7 @@ body {
     -o-transition: all 0.5s ease-in;
     /* Standard */
     transition: all 0.5s ease-in;
-    z-index: 999;
+    z-index: 99999999999;
 }
 
 /* logo dans nav a gauche  */
@@ -628,7 +634,7 @@ body {
     float: right;
     width: 25%;
     margin-right: 40px;
-    margin-top: -4vw;
+    margin-top: -8vw;
 
     /* Changement on scroll  */
     overflow: hidden;
@@ -679,6 +685,7 @@ body {
     }
 
     #presentation .qui {
+        padding-left: 0;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -700,6 +707,12 @@ body {
     }
 }
 
+@media screen and (max-width:1500px) {
+    #presentation .moi{
+    width: 400px !important;
+}
+}
+
 
 
 
@@ -717,7 +730,7 @@ body {
 
 #parcours div.head-content-top {
     width: 100%;
-    height: 140px;
+    height: 2%;
     position: absolute;
     left: 0;
     background: linear-gradient(to left bottom, #fff 49%, rgba(255, 0, 0, 0) 50%);
@@ -1429,7 +1442,7 @@ body {
 
 @media screen and (max-width:1000px) {
     #footer .text {
-        margin: 0;
+        margin-left: 0;
         display: flex;
         flex-direction: row;
         justify-content: center;

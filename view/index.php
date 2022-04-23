@@ -77,13 +77,13 @@ $contact->contact();
             <script src="../js/progress-bar.js"></script>
             <div class="slider">
                 <figure>
-                    <div class="slide">
+                    <div class="slide" id="slider1">
                         <img src="../images/slider_1.png" alt="" class="img-responsive">
                         <div class="text-slider">
                             <h2 class="dWist"><span class="txt-rotate" data-period="2000" data-rotate='[ "Bienvenue sur mon site ", "Welcome on my web site ", "Bienvenidos a mi sitio web ", "Benvenuti nel mio sito web "]'></span></h2>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide" id="slider2">
                         <img src="../images/slider_2.png" alt="">
                         <div class="text-slider change-word">
                             <h2>Une grande
@@ -92,13 +92,14 @@ $contact->contact();
                             </h2>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide" id="slider3">
                         <img src="../images/slider_3.png" alt="">
                         <div class="text-slider clink">
                             <h2>Plus qu'une passion <span></span></h2>
                         </div>
                 </figure>
             </div>
+            <script src="../js/slider.js"></script>
 
 
 
@@ -194,6 +195,7 @@ $contact->contact();
                     </div>
                 </div>
             </div>
+
 
             <!-- Partie parcours  -->
             <div id="parcours">
@@ -369,9 +371,7 @@ $contact->contact();
                             </div>
                             <div class="col-md-6 show-on-scroll">
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" placeholder="Votre message" style="width: 100%; height: 150px;"> <?php if (isset($_POST['message'])) {
-                                                                                                                                                        echo $_POST['message'];
-                                                                                                                                                    } ?></textarea>
+                                    <textarea name="message" class="form-control" placeholder="Votre message" style="width: 100%; height: 150px;"></textarea>
                                 </div>
                                 <!-- Message d'erreur  -->
                                 <?php echo "<div style='color:red;font-weight:600;margin-top:10px;'>" . $contact->getErreurMessage() . "</div>" ?>
