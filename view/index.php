@@ -80,7 +80,7 @@ $contact->contact();
                     <div class="slide" id="slider1">
                         <img src="../images/slider_1.png" alt="" class="img-responsive">
                         <div class="text-slider">
-                            <h2 class="dWist"><span class="txt-rotate" data-period="2000" data-rotate='[ "Bienvenue sur mon site ", "Welcome on my web site ", "Bienvenidos a mi sitio web ", "Benvenuti nel mio sito web "]'></span></h2>
+                            <h2 class="dWist"><span class="txt-rotate" data-period="2000" data-rotate='[ "Bienvenue sur mon site ", "Welcome on my web site "]'></span></h2>
                         </div>
                     </div>
                     <div class="slide" id="slider2">
@@ -355,7 +355,7 @@ $contact->contact();
 
 
                                 <select class="form-select" aria-label="Default select example" name="pour">
-                                    <?php if (isset($_POST['pour'])) {
+                                    <?php if (isset($_POST['pour']) and $_POST['pour'] != "0") {
                                     ?> <option selected value="<?php echo $_POST['pour'] ?>"><?php echo $_POST['pour'] ?></option>
                                     <?php   } else { ?>
                                         <option selected value="0">Objet</option>
@@ -371,7 +371,12 @@ $contact->contact();
                             </div>
                             <div class="col-md-6 show-on-scroll">
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" placeholder="Votre message" style="width: 100%; height: 150px;"></textarea>
+                                    <?php if (!isset($_POST['message'])) { ?>
+                                        <textarea name="message" class="form-control" placeholder="Votre message" style="width: 100%; height: 150px;"></textarea>
+                                    <?php } else { ?>
+                                        <textarea name="message" class="form-control" placeholder="Votre message" style="width: 100%; height: 150px;"><?php echo $_POST['message']; ?></textarea>
+
+                                    <?php } ?>
                                 </div>
                                 <!-- Message d'erreur  -->
                                 <?php echo "<div style='color:red;font-weight:600;margin-top:10px;'>" . $contact->getErreurMessage() . "</div>" ?>
